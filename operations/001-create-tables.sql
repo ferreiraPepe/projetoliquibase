@@ -4,5 +4,5 @@
 CREATE TABLE cliente (
     id INTEGER,
     nome VARCHAR(60),
-    email, VARCHAR(80)
+    email VARCHAR(80)
 );
