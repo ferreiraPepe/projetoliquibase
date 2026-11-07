@@ -60,5 +60,12 @@ CREATE TABLE pagamento (
 );
 
 -- changeset pepe:5
-CREATE TABLE IF NOT EXISTS pagamento (id INTEGER, data_pagamento DATE, valor DECIMAL(10,2), forma_pagamento VARCHAR(30), numero_parcela INTEGER, n_pedido INTEGER);
+CREATE TABLE IF NOT EXISTS pagamento (
+    id INTEGER,
+    data_pagamento DATE,
+    valor DECIMAL(10,2),
+    forma_pagamento VARCHAR(30),
+    numero_parcela INTEGER,
+     n_pedido INTEGER
+);
 
