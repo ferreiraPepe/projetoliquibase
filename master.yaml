@@ -1,3 +1,6 @@
 databaseChangeLog:
   - include:
       file: operations/001-create-tables.sql
+  - include:
+      file: operations/002-alter-constraints.sql
+  

@@ -22,3 +22,43 @@ CREATE TABLE entrega (
     status_entrega VARCHAR(40),
     n_pedido INTEGER
 );
+
+-- changeset pepe:3
+CREATE TABLE contem (
+    n_pedido INTEGER,
+    id_produto INTEGER,
+    quantidade INTEGER,
+    preco_unit_aplicado DECIMAL(10,2)
+)
+
+-- changeset pepe:4
+CREATE TABLE produto (
+    id INTEGER,
+    descricao VARCHAR(100),
+    preco_atual DECIMAL(10,2)
+);
+
+CREATE TABLE fornece (
+    id_produto INTEGER,
+    id_fornecedor INTEGER,
+    custo DECIMAL(10,2)
+);
+
+CREATE TABLE fornecedor (
+    id INTEGER,
+    razao_social VARCHAR(40),
+    cnpj VARCHAR(14)
+);
+
+CREATE TABLE pagamento (
+    id INTEGER,
+    data_pagamento DATE,
+    valor DECIMAL(10,2),
+    forma_pagamento VARCHAR(30),
+    numero_parcela INTEGER,
+    n_pedido INTEGER
+);
+
+-- changeset pepe:5
+CREATE TABLE IF NOT EXISTS pagamento (id INTEGER, data_pagamento DATE, valor DECIMAL(10,2), forma_pagamento VARCHAR(30), numero_parcela INTEGER, n_pedido INTEGER);
+
